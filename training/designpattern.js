@@ -13,10 +13,11 @@ function appendString(stringArray, callback){
   callback(body);
 }
 
+
 let bodyTemplate = ``;
 let resultCase = appendString(splitString(stringExample),function(body){
   console.log(body);
-  bodyTemplate += body.substring(0,body.indexOf("티")+1); //14? +1 해서 15
+  bodyTemplate += body.substring(0,body.indexOf("티")+1);
   console.log(bodyTemplate);
 })
 
